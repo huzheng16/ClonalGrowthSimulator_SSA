@@ -1,0 +1,26 @@
+<Simulation>
+  <Model type="CSC">
+    <MaxAgeTransitCell>8</MaxAgeTransitCell>
+    <DivisionRateStemCell>1</DivisionRateStemCell>
+    <DivisionRateTransitCell>1</DivisionRateTransitCell>
+    <DeathRateStemCell>0</DeathRateStemCell>
+    <DeathRateTransitCell>0</DeathRateTransitCell>
+    <ProbSymmStemCellDivision>0.5</ProbSymmStemCellDivision>
+    <ProbSymmStemCellDifferentiation>0</ProbSymmStemCellDifferentiation>
+  </Model>
+  <Solver type="GillespieOTL">
+      <tau>0.001</tau>
+  </Solver>
+  <Experiment type="IteratedGrowth">
+    <NumberOfPassages>1</NumberOfPassages>
+    <CriticalPopulationSize>100000</CriticalPopulationSize>
+    <NumberOfCellsToKeep>50000</NumberOfCellsToKeep>
+    <Seed>1</Seed>
+    <InitSeed>2</InitSeed>
+    <Name>iteratedgrowth_csc_otl</Name>
+    <OutPath>out/</OutPath>
+    <InitFile>init/K562_noclustering_q=56.txt</InitFile>
+	<UseSimDir/>
+	<gzip/>
+  </Experiment>
+</Simulation>

@@ -1,0 +1,16 @@
+doc/build*
+examples/out
+bin
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Doxyfile
+Makefile
+*.o
+simulator
+simulator_*
+.fuse*
+.cproject
+.settings
+*.#*
+.idea
